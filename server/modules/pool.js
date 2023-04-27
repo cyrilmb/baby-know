@@ -1,4 +1,4 @@
-const pg = require("pg");
+const pg = require('pg');
 let pool;
 
 if (process.env.DATABASE_URL) {
@@ -10,9 +10,9 @@ if (process.env.DATABASE_URL) {
   });
 } else {
   pool = new pg.Pool({
-    host: "localhost",
+    host: 'localhost',
     port: 5432,
-    database: "baby-know",
+    database: 'baby-know-app',
   });
 }
 
